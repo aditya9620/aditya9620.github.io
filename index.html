@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiting for Aastha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdf8f5;
+            color: #4a4a4a;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .chat-bubble {
+            max-width: 75%;
+        }
+        .chat-bubble-me {
+            background-color: #e2e8f0;
+            color: #1a202c;
+        }
+        .chat-bubble-her {
+            background-color: #f472b6;
+            color: white;
+        }
+        /* Style for the word "Delhi" */
+        .delhi-pink {
+            color: #f472b6; /* Made the pink a bit brighter for contrast */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="text-center py-20 md:py-28">
+        <div class="max-w-3xl mx-auto px-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-gray-800">Until <span class="delhi-pink">Delhi</span></h1>
+            <p class="text-lg md:text-xl font-light mb-8 text-gray-600">Counting down the moments until I finally meet you, Aastha.</p>
+            
+            <!-- Countdown Timer -->
+            <div id="countdown" class="grid grid-cols-4 gap-4 text-center max-w-lg mx-auto bg-white p-6 rounded-2xl shadow-lg">
+                <div class="text-gray-800">
+                    <span id="days" class="text-4xl md:text-5xl font-bold">00</span>
+                    <span class="block text-sm font-light uppercase tracking-widest text-gray-500">Days</span>
+                </div>
+                <div class="text-gray-800">
+                    <span id="hours" class="text-4xl md:text-5xl font-bold">00</span>
+                    <span class="block text-sm font-light uppercase tracking-widest text-gray-500">Hours</span>
+                </div>
+                <div class="text-gray-800">
+                    <span id="minutes" class="text-4xl md:text-5xl font-bold">00</span>
+                    <span class="block text-sm font-light uppercase tracking-widest text-gray-500">Minutes</span>
+                </div>
+                <div class="text-gray-800">
+                    <span id="seconds" class="text-4xl md:text-5xl font-bold">00</span>
+                    <span class="block text-sm font-light uppercase tracking-widest text-gray-500">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24 space-y-20 md:space-y-32">
+
+        <!-- Her Words Section -->
+        <section class="section-fade-in max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-pink-500 mb-4">The Magic in Your Words</h2>
+            <p class="text-lg text-gray-600 mb-12">Even with thousands of kilometers between us, a simple notification from you can change my entire day.</p>
+            
+            <div class="space-y-6 text-left">
+                <!-- Updated Chat Example -->
+                <div class="flex justify-start">
+                    <div class="chat-bubble chat-bubble-me p-4 rounded-2xl rounded-bl-none shadow-md">
+                        <p>"You free to talk?"</p>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                     <div class="chat-bubble chat-bubble-her p-4 rounded-2xl rounded-br-none shadow-md">
+                        <p class="font-medium">"For you? I'm not just free, I'm open source ;)"</p>
+                        <p class="text-sm text-pink-100 mt-1 italic">This is the romantic, funny, brilliant mind I get to talk to every day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="section-fade-in max-w-3xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-pink-500 mb-8">From a WhatsApp Group to Someone I Can’t Go a Day Without</h2>
+                <div class="space-y-6 text-left">
+                    <!-- Block 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                        <p class="text-gray-700 text-base md:text-lg leading-relaxed">It all started in the most unexpected place.... a random study group and then after a month of silence, you reached out again.</p>
+                    </div>
+                    <!-- Block 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                        <p class="text-gray-700 text-base md:text-lg leading-relaxed">At first, things felt… different, our talks were mostly about life in general, sprinkled with bits of your past and the things you’d been through. i listened but i still felt there was a layer between us like i was waiting to meet the real you.</p>
+                    </div>
+                    <!-- Block 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                        <p class="text-gray-700 text-base md:text-lg leading-relaxed">Then everything changed... a misunderstanding got cleared up and that’s when you told me you liked me and from there, the conversations shifted, they weren’t just about life anymore, they were about our lives. we started talking about the future, about us… and in those moments, i realised i was finally seeing the genuine, warm and amazing person I’d been hoping to know all along.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Delhi Plan Section -->
+        <section class="section-fade-in text-center max-w-4xl mx-auto">
+             <h2 class="text-4xl md:text-5xl font-bold text-pink-500 mb-6">The Delhi Plan (and Everything After)</h2>
+             <p class="text-lg text-gray-600 mb-12 leading-relaxed">We have a plan, of course... A movie, a walk through Hauz Khas, finding a photo booth to capture the first of many memories. It sounds perfect but the truth is, the only thing on the itinerary that matters is you. The plan can change, as long as I'm with you.</p>
+             <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-left transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Our First Date</h3>
+                    <p class="text-gray-600">Whether we follow the plan or end up ditching it for a quiet corner and hours of conversation, it’ll still be the perfect first date because it’s ours</p>
+                </div>
+                 <div class="bg-white p-8 rounded-2xl shadow-lg text-left transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">A Deeper Dream</h3>
+                    <p class="text-gray-600">One day, I want you to experience Chhath with me. It’s more than just a festival, it’s a part of my soul, my family, my home and I want you to be a part of that world.</p>
+                </div>
+             </div>
+        </section>
+        
+        <!-- A Song for Aastha Section -->
+        <section class="section-fade-in text-center bg-pink-500 text-white p-12 md:p-20 rounded-2xl shadow-xl max-w-3xl mx-auto transition-transform duration-300 hover:scale-105">
+            <h2 class="text-4xl font-bold mb-4">Just For You</h2>
+            <p class="text-xl leading-relaxed">I've searched for the perfect song to describe how I feel but nothing comes close. So, I'm writing one myself. It's a little piece of my heart, set to a melody and it's all for you. I can't wait for you to hear it 👉🏼👈🏼</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-16">
+        <div class="max-w-xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">All This Anticipation...</h3>
+            <p class="text-lg text-gray-600">All the planning, the dreaming, the countdowns... it all comes down to one simple, perfect moment I can't stop thinking about.</p>
+            <p class="text-2xl text-pink-500 font-bold mt-6">The moment I finally get to hold your hand ❤️</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Set the date we're counting down to
+        // 2.5 months from now (mid-August) is the end of October.
+        const countDownDate = new Date();
+        countDownDate.setMonth(countDownDate.getMonth() + 2);
+        countDownDate.setDate(countDownDate.getDate() + 15); // Roughly 2.5 months
+
+        // Update the count down every 1 second
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = String(days).padStart(2, '0');
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<div class='col-span-4 text-2xl font-bold'>The wait is over!</div>";
+            }
+        }, 1000);
+
+        // Intersection Observer for fade-in animations
+        const sections = document.querySelectorAll('.section-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
